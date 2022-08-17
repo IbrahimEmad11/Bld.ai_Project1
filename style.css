@@ -197,7 +197,7 @@ input {
 .quote {
   background-color: white;
   width: 35%;
-  height: 180px;
+  height: auto;
   margin: 5% auto auto 10%;
   box-shadow: 0px -5px 21px -5px black;
   padding-left: 1%;
@@ -205,11 +205,11 @@ input {
   font-size: large;
 }
 
-.cont-image {
+.img-container {
   margin: auto 7% 0 auto;
 }
 
-.alarmy {
+.alarm-img {
   height: 400px;
   width: auto;
 }
@@ -222,11 +222,14 @@ input {
   font-family: "Times New Roman", Times, serif;
   font-size: large;
 }
+.info p {
+  font-size: 21px;
+}
 
 .courses {
-  height: 600px;
+  height: auto;
   width: 78%;
-  margin: 2% auto 10% 10%;
+  margin: 0 auto 10% 10%;
   position: relative;
   top: 25px;
   font-family: "Times New Roman", Times, serif;
@@ -234,14 +237,14 @@ input {
   border: 1px solid rgb(219, 219, 219);
 }
 
-.info2 {
+.info-2 {
   width: 80%;
   margin: 2% auto auto 2%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
 }
 
-.info2 p {
+.info-2 p {
   margin: 0;
 }
 
@@ -269,12 +272,7 @@ input {
 .exp p:hover {
   color: black;
 }
-.courses-container {
-  height: 405px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+
 .cap1 {
   font-weight: bold;
 }
@@ -286,4 +284,47 @@ input {
 .course-img {
   height: 40%;
   width: auto;
+}
+
+.tab-container {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-left: 7%;
+  position: relative;
+}
+.tabs {
+  font-weight: bold;
+  margin-left: 4%;
+  font-size: larger;
+  color: #53575d;
+  position: absloute;
+}
+.tabs:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.courses-container {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-flow: wrap;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.img-container {
+  width: 300px;
+  height: auto;
+}
+
+.course-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.courses-container:hover {
+  cursor: pointer;
 }
