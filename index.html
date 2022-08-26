@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
-        <title>Online Courses - Learn Anything On Your Schedule | Udemy</title>
-    </head>
+        
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+              crossorigin="anonymous"/>
+             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
+             <link rel="stylesheet" href="style.css">
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+             <title>Online Courses - Learn Anything On Your Schedule | Udemy</title>
+     </head>
     <body>
-        <nav class="nav-bar">
-            <div class="end">
-                <img class="micro2" src="material/menu.jpg" alt="search">
+        <nav class="navi-bar">
+            <div class="menu"></div>
+                <img class="micro2" src="material/menu.jpg" alt="menu icon"/>
             </div>
             <div class="logo">
                 <img class="udemy-logo" src="material/udemy.svg" alt="Udemy Logo">
             </div>
-            <div class="p">
+            <div class="para">
                 <p>Categories</p>
             </div>
             
@@ -24,11 +31,11 @@
                 <img class="search" src="material/search.png" alt="search icon">
                 <input class="search-bar" type="text" name="submit" placeholder="Search for anything">
             </form>
-            <div class="p">
-                <p>Udemy bussines</p>
+            <div class="para">
+                <p>Udemy business</p>
             </div>
             </form>
-            <div class="p">
+            <div class="para">
                 <p>Tech on Udemy</p>
             </div>
             <div class="cart-logo">
@@ -39,7 +46,7 @@
                 <p><strong>Log in</strong></p>
             </div>
             
-            <div class="signup">
+            <div class="sign-up">
                 <p><strong>Sign up</strong></p>
             </div>
             
@@ -64,23 +71,25 @@
 
         <section>
             <div class="info">
-                <h1>A broad selection of courses</h1>
+                <h1 style="font-weight:bolder;">A broad selection of courses</h1>
                 <p>Choose from 185,000 online video courses with new additions published every month</p>
             </div>
         </section>
         <br/>
-        <br/>
-        <div class="tab-container">
-            <div class="tabs tab-1"> <span>Python</span></div>
-            <div class="tabs tab-2"> <span>Excel</span></div>
-            <div class="tabs tab-3"> <span>Web Development</span></div>
-            <div class="tabs tab-4"> <span>JavaScript</span></div>
-            <div class="tabs tab-5"> <span>Data Science</span></div>
-            <div class="tabs tab-6"> <span>AWS Certification</span></div>
-            <div class="tabs tab-7"> <span>Drawing</span></div>
+        <div class="courses-categories">
+            <ul style="list-style-type:none">
+                <li class="pressed">Python</li>
+                <li class="norm">Excel</li>
+                <li class="norm">Web Development</li>
+                <li class="norm">JavaScript</li>
+                <li class="norm">Data Science</li>
+                <li class="norm">AWS Certification</li>
+                <li class="norm">Drawing</li>
+            </ul>
         </div>
+       
 
-        <section>
+        <section >
             <div class="courses">
                 <div class="info-2">
                     <h1>Expand your career opportunities with Python</h1>
@@ -90,14 +99,108 @@
                 </div>
 
                 <div class="exp">
-                    <p><strong>Explore Python</strong></p>
+                    <p style="font-size:16px ;"><strong>Explore Python</strong></p>
                 </div>
 
-                <div class="courses-container">  
+                <div class="courses-container">
+                    <div class="bd-example">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <script src="./script.js"></script>
 
-    </body>
+<!------------------------------------------------------------------- -->
+    
+     <section>        
+        <div class="cat-container">
+            <h2>Top Categories</h2>
+                <div class="row mb-2"> 
+
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card ">    
+                            <img class="cati-img" src="material/categ/fig1.png"/>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card ">    
+                            <img class="cati-img" src="material/categ/fig2.png"/>
+                            <p>Development </p>
+                         </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card ">    
+                            <img class="cati-img" src="material/categ/fig3.png"/>
+                            <p>Marketing</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card ">    
+                            <img class="cati-img" src="material/categ/fig4.png"/>
+                            <p>IT and Software</p>
+                        </div>
+                    </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card ">    
+                                <img class="cati-img" src="material/categ/fig5.png"/>
+                                <p>Personal Development</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card ">    
+                            <img class="cati-img" src="material/categ/fig6.png"/>
+                            <p>Business</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card ">    
+                            <img class="cati-img" src="material/categ/fig7.png"/>
+                            <p>Photography</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card ">    
+                            <img class="cati-img" src="material/categ/fig8.png"/>
+                            <p>Music</p>
+                        </div>
+                    </div>
+                        
+                </div>
+         </div>
+     </section>
+    
+     <script src="./script.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+         crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+         crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+         crossorigin="anonymous"></script> </body>
 </html>
